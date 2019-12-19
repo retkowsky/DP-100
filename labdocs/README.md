@@ -15,12 +15,12 @@ You should complete the labs in order, following the instructions in each Markdo
 
 ### Module 2: "No-code" Machine Learning with Designer
 
-- Lab 2A: Creating a Training Pipeline with the Azure ML Designer
-- Lab 2B: Deploying a Service with the Azure ML Designer
+- [Lab 2A: Creating a Training Pipeline with the Azure ML Designer](Lab02A.md)
+- [Lab 2B: Deploying a Service with the Azure ML Designer](Lab02B.md)
 
 ### Module 3: Running Experiments and Training Models
 
-- Lab 3A: Running Experiments
+- [Lab 3A: Running Experiments](Lab03A.md)
 - Lab 3B: Training and Registering Models
 
 ### Module 4: Working with Data
