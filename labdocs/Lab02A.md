@@ -12,7 +12,7 @@ To get started with Designer, first you must create a pipeline and add the datas
 
 1. In [Azure Machine Learning studio](https://ml.azure.com) for your workspace, view the **Designer** page and create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Visual Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
-3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster1** compute target you created in the previous lab.
+3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster** compute target you created in the previous lab.
 4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes dataset** dataset you created in the previous exercise onto the canvas.
 5. Select the **diabetes dataset** module on the canvas, and view its settings. Then on the **outputs** tab, click the **Visualize** icon (which looks liks a bar chart).
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then close the visualization.

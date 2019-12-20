@@ -11,12 +11,12 @@ Before you start this exercise, ensure that you have completed [Lab 2A](Lab02A.m
 In this lab, you will publish an inference pipeline as a containerized service in an Azure Kubernetes Service (AKS) cluster. An AKS cluster can take some time to initialize, so you'll start the process before preparing your inference pipeline.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page for your workspace, review the existing compute targets under each tab. These should include:
-    * **Notebook VMs**: The notebook VM you created in aprevious lab.
-    * **Training Clusters**: The **aml-cluster1** compute target you created in a previous lab].
+    * **Compute Instances**: The compute instance you created in aprevious lab.
+    * **Training Clusters**: The **aml-cluster** compute target you created in a previous lab].
     * **Inference Clusters**: None (yet!)
     * **Attached Compute**: None (this is where you could attach a virtual machine or Databricks cluster that exists outside of your workspace)
 
-2. In the **Notebook VM** tab, if your notebook VM is not already running, start it - you will use it later in this lab.
+2. In the **Compute Instances** tab, if your compute instance is not already running, start it - you will use it later in this lab.
 
 3. On the **Inference Clusters** tab, add a new cluster with the following settings:
     * **Compute name**: aks-cluster
@@ -60,7 +60,7 @@ While the inference compute is being provisioned, you can prepare the inference 
 
     ![Visual Inference Pipeline](images/visual-inference.jpg)
 
-8. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-compute1** compute target you used for training. This may take a while!
+8. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-compute** compute target you used for training. This may take a while!
 
 ## Task 3: Publish a Web Service
 
@@ -80,7 +80,7 @@ Now you can test your deployed service from a client application - in this case,
 1. On the **Endpoints** page, open the **predict-diabetes** real-time endpoint.
 2. When the **predict-diabetes** endpoint opens, on the **Test** page, note the default test input parameters and then click **Test** to submit them to the deployed web service and generate a prediction.
 3. On the **Consume** tab, view the sample code that is provided for **Python**, and then copy the entire Python sample script to the clipboard.
-4. On the **Compute** page, if your notebook VM is not yet running, wait for it to start. Then click its **Jupyter** link.
+4. On the **Compute** page, if your compute instance is not yet running, wait for it to start. Then click its **Jupyter** link.
 5. In Jupyter, in the **DP-100** folder, open **02B - Using the Visual Designer.ipynb**.
 6. In the notebook, paste the code you copied into the empty code cell.
 7. Run the code cell and view the output returned by your web service.

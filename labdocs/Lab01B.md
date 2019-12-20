@@ -6,11 +6,11 @@ In this lab, you will explore various tools for working with an Azure Machine Le
 
 Before starting this lab, you must have created an Azure Machine Learning workspace by following the instructions in the [previous lab](Lab01A.md).
 
-## Task 1: Use the Azure ML SDK in a Notebook VM
+## Task 1: Use the Azure ML SDK in a Compute Instance
 
 You can perform most asset management tasks to set up your environment in the *Studio* interface, but it's also important to be able to script configuration tasks to make them easier to repeat and automate.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page for your workspace, view the **Notebook VMs** tab, and if necessary, click **Refresh** periodically until the Notebook VM you created in the previous lab has started. Then click its **Jupyter** link to open Jupyter Notebooks on the VM.
+1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page for your workspace, view the **Compute Instances** tab, and if necessary, click **Refresh** periodically until the compute instance you created in the previous lab has started. Then click its **Jupyter** link to open Jupyter Notebooks on the VM.
 2. In the notebook environment, create a new **Terminal**. This will open a new tab with a command shell, opened in the **Users** folder.
 3. The Azure Machine Learning SDK is already installed in the Notebook VM image, but it's worth ensuring you have the latest version, with the optional packages you'll need in this course; so enter the following command to update the SDK packages:
 

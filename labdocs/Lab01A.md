@@ -10,15 +10,13 @@ Azure Machine Learning (Azure ML) is a Microsoft Azure-based service for running
 
 As its name suggests, a workspace is a centralized place to manage all of the Azure ML assets you need to work on a machine learning project.
 
-1. Use the filters on the [Azure Products Available by Region page](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=virtual-machines) to find an Azure region that supports the *NC-series* of virtual machines.
+1. Sign into the [Azure portal](https://portal.azure.com) and create a new **Machine Learning** resource, specifying a unique workspace name and creating a new resource group in the **North Central US** or **UK South** region. Select the **Enterprise** workspace edition.
 
-   >   **Note**: Machine Learning workspaces aren't restricted to these regions, but if you plan to provision GPU-enabled compute in your workspace, you need to create the workspace in a region where GPU virtual machines are supported.
+   > **Note**: You ***must*** use the **North Central US** or **South UK** region due to limited preview availability of some features we'll explore in this course.
+   >
+   > Basic edition workspaces have lower cost, but don't include capabilities like Auto ML, the Visual Designer, and data drift monitoring. For more details, see [Azure Machine Learning pricing](https://azure.microsoft.com/en-us/pricing/details/machine-learning/).
 
-2. Sign into the [Azure portal](https://portal.azure.com) and create a new **Machine Learning** resource, specifying a unique workspace name and creating a new resource group in the region you identified in the previous step. Select the **Enterprise** workspace edition.
-
-   > **Note**: Basic edition workspaces have lower cost, but don't include capabilities like Auto ML, the Visual Designer, and data drift monitoring. For more details, see [Azure Machine Learning pricing](https://azure.microsoft.com/en-us/pricing/details/machine-learning/).
-
-3. When the workspace and its associated resources have been created, view the workspace in the portal.
+2. When the workspace and its associated resources have been created, view the workspace in the portal.
 
 ## Task 2: Explore the Azure ML Studio Interface
 
@@ -34,14 +32,14 @@ You can manage workspace assets in the Azure portal, but for data scientists, th
 One of the benefits of Azure Machine Learning is the ability to create cloud-based compute on which you can run experiments and training scripts at scale.
 
 1. In the Azure Machine Learning studio web interface for your workspace, view the **Compute** page. This is where you'll manage all the compute targets for your data science activities.
-2. On the **Notebook VMs** tab, add a new **Notebook VM**, giving it a unique name and using the default VM type template. You'll use this VM as a development environment in subsequent labs.
+2. On the **Compute Instances** tab, add a new compute instance, giving it a unique name and using the **STANDARD_DS3_V2** VM type template. You'll use this VM as a development environment in subsequent labs.
 3. While the notebook VM is being created, switch to the **Training Clusters** tab, and add a new training cluster with the following settings:
-    * **Compute name**: aml-cluster1
+    * **Compute name**: aml-cluster
     * **Virtual Machine size**: Standard_DS12_v2
     * **Virtual Machine priority**: Dedicated
     * **Minimum number of nodes**: 0
     * **Maximum number of nodes**: 4
-    * **Idle seconds before scale down**: 60
+    * **Idle seconds before scale down**: 120
 4. Note the **Inference Clusters** tab. This is where you can create and manage compute targets on which to deploy your trained models as web services for client applications to consume.
 5. Note the **Attached Compute** tab. This is where you could attach a virtual machine or Databricks cluster that exists outside of your workspace.
 
