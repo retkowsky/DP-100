@@ -45,13 +45,15 @@ One of the benefits of Azure Machine Learning is the ability to create cloud-bas
 4. Note the **Inference Clusters** tab. This is where you can create and manage compute targets on which to deploy your trained models as web services for client applications to consume.
 5. Note the **Attached Compute** tab. This is where you could attach a virtual machine or Databricks cluster that exists outside of your workspace.
 
+    > **Note**: You'll explore compute targets in more detail later in the course.
+
 ## Task 4: Create Data Resources
 
 Now that you have some compute resources that you can use to process data, you'll need a way to store and ingest the data to be processed.
 
 1. In the *Studio* interface, view the **Datastores** page. Your Azure ML workspace already includes two datastores based on the Azure Storage account that was created along with the workspace. These are used to store notebooks, configuration files, and data.
 
-   > **Note**: In a real-world environment, you'd likely add custom datastores that reference your business data stores - for example, Azure blob containers, Azure Data Lakes, Azure SQL Databases, and so on. We'll explore this later in the course.
+   > **Note**: In a real-world environment, you'd likely add custom datastores that reference your business data stores - for example, Azure blob containers, Azure Data Lakes, Azure SQL Databases, and so on. You'll explore this later in the course.
 
 2. In the *Studio* interface, view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
 3. Create a new dataset from web files, using the following settings:
@@ -63,4 +65,4 @@ Now that you have some compute resources that you can use to process data, you'l
     * **Schema**: Review the default column selections and data types.
 4. After the dataset has been created, open it and view the **Explore** page to see a sample of the data. This data represents details from patients who have been tested for diabetes, and you will use it in many of the subsequent labs in this course.
 
-> **Note**: You can optionally generate a *profile* of the dataset to see more details.
+    > **Note**: You can optionally generate a *profile* of the dataset to see more details. You'll explore datasets in more detail later in the course.

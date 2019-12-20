@@ -10,12 +10,12 @@ Before starting this lab, you must have created an Azure Machine Learning worksp
 
 You can perform most asset management tasks to set up your environment in the *Studio* interface, but it's also important to be able to script configuration tasks to make them easier to repeat and automate.
 
-1. In Azure Machine Learning studio, on the **Compute** page, view the **Notebook VMs** tab, and if necessary, click **Refresh** periodically until the Notebook VM you created in the previous lab has started. Then click its **Jupyter** link to open Jupyter Notebooks on the VM.
+1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page for your workspace, view the **Notebook VMs** tab, and if necessary, click **Refresh** periodically until the Notebook VM you created in the previous lab has started. Then click its **Jupyter** link to open Jupyter Notebooks on the VM.
 2. In the notebook environment, create a new **Terminal**. This will open a new tab with a command shell, opened in the **Users** folder.
-3. The Azure Machine Learning SDK is already installed in the Notebook VM image, but it's worth ensuring you have the latest version, with all the optional packages you'll need in this course; so enter the following command to update the SDK packages:
+3. The Azure Machine Learning SDK is already installed in the Notebook VM image, but it's worth ensuring you have the latest version, with the optional packages you'll need in this course; so enter the following command to update the SDK packages:
 
     ```bash
-    pip install --upgrade azureml-sdk[notebooks,automl,explain] --force-reinstall
+    pip install --upgrade azureml-sdk[notebooks,automl,explain]
     ```
 
     > **More Information**: For more details about installing the Azure ML SDK and its optional components, see the [Azure ML SDK Documentation](https://docs.microsoft.com/python/api/overview/azure/ml/install?view=azure-ml-py).
@@ -31,7 +31,7 @@ You can perform most asset management tasks to set up your environment in the *S
 
 ## Task 2: Set Up a Visual Studio Online Environment
 
-Notebook VMs in Azure Machine Learning provide an easy to manage Python environment for working with Azure ML. However, sometimes you may want to use your own graphical Python development environment. In this course, we'll use Visual Studio Online to simplify installation, but the principles of using the Azure Machine Learning SDK are the same in any Python environment.
+Notebook VMs in Azure Machine Learning provide an easy to manage Python environment for working with Azure ML without the need to manage your own Python installation. However, sometimes you may want to use your own graphical Python development environment. In this course, we'll use Visual Studio Online to simplify installation, but the principles of using the Azure Machine Learning SDK are the same in any Python environment.
 
 1. In a new browser tab, navigate to [https://online.visualstudio.com](https://online.visualstudio.com), and click **Get Started**.
 2. Sign into Visual Studio Online using the same Microsoft credentials you used to sign into Azure.
@@ -99,7 +99,7 @@ If you plan to work with Azure Machine Learning in Visual Studio Online (or a lo
 
 1. In Visual Studio Online, click the **Extensions** tab (&#8862;), and search for "Azure Machine Learning". Then install the **Azure Machine Learning** extension from Microsoft. After the extension has installed, click the **Reload Required** button to reload the environment with the extension.
 2. In Visual Studio Online, click the **Azure** tab (***&Delta;***) and in the **Azure Machine Learning** section, expand your subscription and your Azure Machine Learning workspace.
-3. Expand **Compute** and verify that the compute resources you created in your workspace are listed along with a **local** compute resource that represents the Visual Studio Online hosted environment. Note that you can run Azure Machine Learning code experiments on local compte as well as compute resources defined in the workspace.
+3. Expand **Compute** and verify that the compute resources you created in your workspace are listed along with a **local** compute resource, which in this case represents the Visual Studio Online hosted environment - you can run Azure Machine Learning code experiments on local compute as well as on compute resources defined in the workspace.
 4. Close the Visual Studio Online browser tab.
 
 > **Note**: If you intend to continue straight to the [next exercise](Lab02A.md), leave your Notebook VM running. If you're taking a break, you might want to close all Jupyter tabs and **Stop** your Notebook VM to avoid incurring unnecessary costs.

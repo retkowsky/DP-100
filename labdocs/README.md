@@ -21,16 +21,16 @@ You should complete the labs in order, following the instructions in each Markdo
 ### Module 3: Running Experiments and Training Models
 
 - [Lab 3A: Running Experiments](Lab03A.md)
-- Lab 3B: Training and Registering Models
+- [Lab 3B: Training and Registering Models](Lab03B.md)
 
 ### Module 4: Working with Data
 
-- Lab 4A: Working with Datastores
-- Lab 4B: Working with Datasets
+- [Lab 4A: Working with Datastores](Lab04A.md)
+- [Lab 4B: Working with Datasets](Lab04B.md)
 
 ### Module 5: Compute Contexts
 
-- Lab 5A: Working with Environments
+- [Lab 5A: Working with Environments](Lab05A.md)
 - Lab 5B: Working with Compute Targets
 
 ### Module 6: Orchestrating Operations with Pipelines
