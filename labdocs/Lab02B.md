@@ -92,4 +92,4 @@ The web service is hosted in a Kubernetes cluster. If you don't intend to experi
 1. In the *Studio* web interface for your Azure ML workspace, on the **Endpoints** tab, select the **predict-diabetes** endpoint. Then click the **Delete** (&#128465;) button and confirm that you want to delete the endpoint.
 2. On the **Compute** page, on the **Inference Clusters** tab, select the select the **aks-cluster** endpoint. Then click the **Delete** (&#128465;) button and confirm that you want to delete the compute target.
 
-> **Note**: If you intend to continue straight to the [next exercise](Lab03A.md), leave your Notebook VM running. If you're taking a break, you might want to close the Jupyter tabs and **Stop** your Notebook VM to avoid incurring unnecessary costs.
+> **Note**: If you intend to continue straight to the [next exercise](Lab03A.md), leave your compute instance running. If you're taking a break, you might want to close the Jupyter tabs and **Stop** your compute instance to avoid incurring unnecessary costs.

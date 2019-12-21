@@ -12,7 +12,7 @@ As its name suggests, a workspace is a centralized place to manage all of the Az
 
 1. Sign into the [Azure portal](https://portal.azure.com) and create a new **Machine Learning** resource, specifying a unique workspace name and creating a new resource group in the **North Central US** or **UK South** region. Select the **Enterprise** workspace edition.
 
-   > **Note**: If you can't use the **North Central US** or **South UK** region, you may need to use *Notebook VMs* instead of *Container Instances* to complete the labs in this course due to limited preview availability.
+   > **Note**: If you can't use the **North Central US** or **South UK** region, you may need to use *Notebook VMs* instead of *Container Instances* to complete the labs in this course due to [limited preview availability](https://docs.microsoft.com/azure/machine-learning/service/concept-compute-instance).
    >
    > Basic edition workspaces have lower cost, but don't include capabilities like Auto ML, the Visual Designer, and data drift monitoring. For more details, see [Azure Machine Learning pricing](https://azure.microsoft.com/en-us/pricing/details/machine-learning/).
 

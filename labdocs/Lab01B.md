@@ -12,7 +12,7 @@ You can perform most asset management tasks to set up your environment in the *S
 
 1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page for your workspace, view the **Compute Instances** tab, and if necessary, click **Refresh** periodically until the compute instance you created in the previous lab has started. Then click its **Jupyter** link to open Jupyter Notebooks on the VM.
 2. In the notebook environment, create a new **Terminal**. This will open a new tab with a command shell, opened in the **Users** folder.
-3. The Azure Machine Learning SDK is already installed in the Notebook VM image, but it's worth ensuring you have the latest version, with the optional packages you'll need in this course; so enter the following command to update the SDK packages:
+3. The Azure Machine Learning SDK is already installed in the compute instance image, but it's worth ensuring you have the latest version, with the optional packages you'll need in this course; so enter the following command to update the SDK packages:
 
     ```bash
     pip install --upgrade azureml-sdk[notebooks,automl,explain]
@@ -27,11 +27,11 @@ You can perform most asset management tasks to set up your environment in the *S
     ```
 
 5. After the command has completed, close the terminal tab and view the home page in your Jupyter notebook file explorer - it should contain an **DP-100** folder, containing the files you will use in the rest of this lab.
-6. In the **/DP-100** folder, open the **01B - Intro to the Azure ML SDK.ipynb** notebook.Then read the notes in the notebook, running each code cell in turn.
+6. In the **/DP-100** folder, open the **01B - Intro to the Azure ML SDK.ipynb** notebook. Then read the notes in the notebook, running each code cell in turn.
 
 ## Task 2: Set Up a Visual Studio Online Environment
 
-Notebook VMs in Azure Machine Learning provide an easy to manage Python environment for working with Azure ML without the need to manage your own Python installation. However, sometimes you may want to use your own graphical Python development environment. In this course, we'll use Visual Studio Online to simplify installation, but the principles of using the Azure Machine Learning SDK are the same in any Python environment.
+Compute instances in Azure Machine Learning provide an easy to manage Python environment for working with Azure ML without the need to manage your own Python installation. However, sometimes you may want to use your own graphical Python development environment. In this course, we'll use Visual Studio Online to simplify installation, but the principles of using the Azure Machine Learning SDK are the same in any Python environment.
 
 1. In a new browser tab, navigate to [https://online.visualstudio.com](https://online.visualstudio.com), and click **Get Started**.
 2. Sign into Visual Studio Online using the same Microsoft credentials you used to sign into Azure.
@@ -102,4 +102,4 @@ If you plan to work with Azure Machine Learning in Visual Studio Online (or a lo
 3. Expand **Compute** and verify that the compute resources you created in your workspace are listed along with a **local** compute resource, which in this case represents the Visual Studio Online hosted environment - you can run Azure Machine Learning code experiments on local compute as well as on compute resources defined in the workspace.
 4. Close the Visual Studio Online browser tab.
 
-> **Note**: If you intend to continue straight to the [next exercise](Lab02A.md), leave your Notebook VM running. If you're taking a break, you might want to close all Jupyter tabs and **Stop** your Notebook VM to avoid incurring unnecessary costs.
+> **Note**: If you intend to continue straight to the [next exercise](Lab02A.md), leave your compute instance running. If you're taking a break, you might want to close all Jupyter tabs and **Stop** your compute instance to avoid incurring unnecessary costs.
