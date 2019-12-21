@@ -31,31 +31,31 @@ You should complete the labs in order, following the instructions in each Markdo
 ### Module 5: Compute Contexts
 
 - [Lab 5A: Working with Environments](Lab05A.md)
-- Lab 5B: Working with Compute Targets
+- [Lab 5B: Working with Compute Targets](Lab05B.md)
 
 ### Module 6: Orchestrating Operations with Pipelines
 
-- Lab 6A: Creating a Pipeline
-- Lab 6B: Publishing a Pipeline Service
+- [Lab 6A: Creating a Pipeline](Lab06A.md)
+- [Lab 6B: Publishing a Pipeline Service](Lab06B.md)
 
 ### Module 7: Deploying and Consuming Models
 
-- Lab 7A: Creating a Real-time Inferencing Service
-- Lab 7B: Creating a Batch Inferencing Service
+- [Lab 7A: Creating a Real-time Inferencing Service](Lab07A.md)
+- [Lab 7B: Creating a Batch Inferencing Service](Lab07B.md)
 
 ### Module 8: Training Optimal Models
 
-- Lab 8A: Tuning Hyperparameters
-- Lab 8B: Using Automated Machine Learning
+- [Lab 8A: Tuning Hyperparameters](Lab08A.md)
+- [Lab 8B: Using Automated Machine Learning](Lab08B.md)
 
 ### Module 9: Interpreting Models
 
-- Lab 9A: Reviewing Automated Machine Learning Explanations
-- Lab 9B: Interpreting Models
+- [Lab 9A: Reviewing Automated Machine Learning Explanations](Lab09A.md)
+- [Lab 9B: Interpreting Models](Lab09B.md)
 
 ### Module 10: Monitoring Models
 
-- Lab 10A: Monitoring a Model with Application Insights
-- Lab 10B: Monitoring Data Drift
+- [Lab 10A: Monitoring a Model with Application Insights](Lab10A.md)
+- [Lab 10B: Monitoring Data Drift](Lab10B.md)
 
-> **Important**: Remember to stop any virtual machines used in these labs when you no longer need them - this will minimize the aount of Azure credit incurred for these services. When you have completed all of the labs, consider deleting the resource group you created if you don't plan to experiment with it any further.
+> **Important**: Remember to stop any virtual machines used in these labs when you no longer need them - this will minimize the Azure credit incurred for these services. When you have completed all of the labs, consider deleting the resource group you created if you don't plan to experiment with it any further.

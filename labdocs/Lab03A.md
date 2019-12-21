@@ -4,7 +4,7 @@ Experiments are at the core of a data scientist's work. In Azure Machine Learnin
 
 ## Before You Start
 
-Before you start this exercise, ensure that you have completed [Lab 1A](Lab01A.md), which includes tasks to create the Azure Machine Learning workspace and compute instance used in this lab.
+Before you start this lab, ensure that you have completed [Lab 1A](Lab01A.md) and [Lab 1B](Lab01B.md), which include tasks to create the Azure Machine Learning workspace and other resources used in this lab.
 
 ## Task 1: Run Experiments in a Compute Instance
 
