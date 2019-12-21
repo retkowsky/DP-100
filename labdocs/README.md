@@ -1,8 +1,8 @@
-# Designing and Implementing a Data Science Solution on Microsoft Azure
+# Designing and Implementing an Azure Data Science Solution
 
 ## Course Labs
 
-Welcome to the hands-on lab exercises for course DP-100 *Designing and Implementing a Data Science Solution on Microsoft Azure*. The labs are designed to accompany the course and enable you to practice using the technologies described in the classroom materials.
+Welcome to the hands-on lab exercises for course DP-100 *Designing and Implementing an Azure Data Science Solution*. The labs are designed to accompany the course and enable you to practice using the technologies described in the classroom materials.
 
 You should complete the labs in order, following the instructions in each Markdown document carefully. In some labs, you will need to clone this GitHub repo to your own development environment.
 
