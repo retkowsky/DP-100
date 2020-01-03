@@ -36,44 +36,24 @@ Compute instances in Azure Machine Learning provide an easy to manage Python env
 1. In a new browser tab, navigate to [https://online.visualstudio.com](https://online.visualstudio.com), and click **Get Started**.
 2. Sign into Visual Studio Online using the same Microsoft credentials you used to sign into Azure.
 3. Create a new environment with the following settings, creating a billing plan in your Azure subscription first if prompted:
-    - **Environment Name**: A unique name of your choice.
-    - **Git Repository**: `https://github.com/GraemeMalcolm/DP-100`
+    - **Environment Name**: *A unique name of your choice*
+    - **Git Repository**: `GraemeMalcolm/DP-100`
     - **Instance Type**: Standard (Linux)
     - **suspend idle environment after**: 30 Minutes
 4. Wait for your environment to be created, and then click its name to connect to it.
 
-    Visual Studio Online is a hosted instance of Visual Studio Code that you can use in a web browser. Visual Studio Code is a general code editing environment, with support for various programming langaues through the installation of *extensions*. To work with Python, you'll need the Microsof Python extension.
+    Visual Studio Online is a hosted instance of Visual Studio Code that you can use in a web browser. Visual Studio Code is a general code editing environment, with support for various programming langaues through the installation of *extensions*. To work with Python, you'll need the Microsoft Python extension, which was installed for you along with some commonly used Python packages when you created this environment from the **DP-100** repo.
+    
+    The hosted Visual Studio Code environment includes three installations of Python (versions 2.7.13, 3.5.3, and 3.8.0). You will use the Python **3.5.3** virtual environment. In your own installation, you are responsible for installing Python, creating virtual environments, and installing the packages you need. In this lab, most of the general Python configuration has been done for you, but you need to install the Azure Machine Learning SDK.
 
-5. In the Visual Studio Online environment, click the **Extensions** tab (&#8862;), and search for "Python". Then install the **Python** extension from Microsoft. After the extension has installed, click the **Reload Required** button to reload the environment with the extension.
-
-    Now that you have installed the Python extension, you need to install the various packages you will need into the Python virtual environment you plan to use to work with Azure Machine Learning. The hosted Visual Studio Code environment includes three installations of Python (versions 2.7.13, 3.5.3, and 3.8.0). You will use the Python **3.5.3** virtual environment.
-
-6. In the Visual Studio Online environment, in the Application Menu (**&#9776;**), on the **View** menu, click **Command Palette** (or press CTRL+SHIFT+P). Then in the Palette, enter the command **Python: Create Terminal**. This opens a Python terminal pane at the bottom of the Visual Studio Online interface.
-7. In the terminal, enter the following command to change to the directory where the Python 3.5.3 virtual environment is defined:
+5. In the Visual Studio Online environment, in the Application Menu (**&#9776;**), on the **View** menu, click **Command Palette** (or press CTRL+SHIFT+P). Then in the Palette, enter the command **Python: Create Terminal**. This opens a Python terminal pane at the bottom of the Visual Studio Online interface.
+6. In the terminal, enter the following command to change to the directory where the Python 3.5.3 virtual environment is defined:
 
     ````bash
     cd /usr/bin
     ````
 
-8. The **pip** utility is not installed for Python 3.5.3 environment, you you need to download a script to install it by entering the following command:
-
-    ```bash
-    sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-    ```
-
-9. Now you can run the downloaded script to install the **pip** utility:
-
-    ```bash
-    sudo python3 get-pip.py
-    ```
-
-10. With **pip** installed, you can now install the Python packages you need. First, use the following command to install some common Python packages you are likely to use:
-
-    ```bash
-    sudo pip install jupyter pandas numpy matplotlib scikit-learn
-    ```
-
-11. Now install the Azure Machine Learning SDK (with the optional *notebooks* extra package) using this command:
+7. Now install the Azure Machine Learning SDK (with the optional *notebooks* extra package) using this command:
 
     ```bash
     sudo pip install azureml-sdk[notebooks]
@@ -90,8 +70,9 @@ Now that you have a Python development environment, you can use the Azure Machin
 3. Open the downloaded **config.json** file in a text editor, and copy it's contents to the clipboard. This file contains the configuration information necessary to connect to your workspace.
 4. In Visual Studio Online, create a new file named **config.json** in the root folder of your VS Online workspace.
 5. Paste the copied configuration information into the new config.json file in your Visual Studio Online workspace, and save it.
-6. In Visual Studio Online, open the **01B - Intro to the Azure ML SDK.ipynb** notebook - this will be loaded in the Jupyter Notebook interface within Visual Studio Online.
-7. At the bottom left of the Visual Studio Online interface, click the current Python virtual environment (Python 3.8.0) and change it to **Python 3.5.3**. Then read the notes in the notebook, running each code cell in turn, just as you did in the Azure Machine Learning Notebook VM Jupyter environment.
+6. In Visual Studio Online, open the **01B - Intro to the Azure ML SDK.ipynb** notebook - this will be loaded in the Jupyter Notebook interface within Visual Studio Online. It may take a while to load the first time the Jupyter Notebooks interface is used, and you may briefly see two panes - one containing the JSON representation of the notebook, and the other containing the notebook visual interface.
+7. When the notebook has loaded, check at the bottom left of the Visual Studio Online interface to verify the current Python virtual environment. This should have changed to **Python 3.5.3** based on the configuration settings in the repo. If not, change it. 
+8. Read the notes in the notebook, running each code cell in turn, just as you did in the Azure Machine Learning Notebook VM Jupyter environment.
 
 ## Task 4: Use the Visual Studio Code Azure Machine Learning Extension
 
